@@ -17,8 +17,8 @@
     justify-content: center;
     align-items: center;
     transition: border var(--transition-options);
-    & :hover,
-    & :focus {
+    &:hover,
+    &:focus {
             border: 1px solid var(--accent-color);
         }
 }

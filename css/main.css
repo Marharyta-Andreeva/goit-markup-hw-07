@@ -760,7 +760,7 @@ body {
   -webkit-transition: border var(--transition-options);
   transition: border var(--transition-options);
 }
-.clients__link :hover, .clients__link :focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
 }
 
