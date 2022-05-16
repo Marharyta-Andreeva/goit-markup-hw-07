@@ -45,9 +45,10 @@
 .soc__list {
     display: flex;
     justify-content: center;
-    &__item + &__item {
-            margin-left: 10px;
-        }
+}
+
+soc__item + soc__item {
+    margin-left: 10px;
 }
 
 .soc__link {
