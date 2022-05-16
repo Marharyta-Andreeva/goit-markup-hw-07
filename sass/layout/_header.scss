@@ -11,30 +11,28 @@
     margin-right: 93px;
 }
 
-.navigation {
+.main-nav {
     display: flex;
     align-items: center;
-}
-
-.menu {
-    display: flex;
     &__item:not(:last-child) {
             margin-right: 50px;
         }
 }
 
-.connect {
+.main-nav__list {
     display: flex;
-    &__item+.connect__item {
-            margin-left: 50px;
-        }
 }
 
-.header__connect {
+.contact__list {
+    display: flex;
     margin-left: auto;
 }
 
-.menu__link {
+.contact__item + .contact__item {
+    margin-left: 50px;
+}
+
+.main-nav__link {
     position: relative;
     font-weight: 500;
     line-height: 1.14;
@@ -62,8 +60,8 @@
     background-color: var(--accent-color);
 }
 
-.connect__mail,
-.connect__tel {
+.contact__mail,
+.contact__tel {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -81,21 +79,21 @@
         }
 }
 
-.connect__mail-icon {
+.contact__mail-icon {
     padding: 0;
     margin-left: 0;
     margin-right: 10px;
     fill: var(--primary-text-color);
     transition: color var(--transition-options);
-    .connect__mail:hover & {
+    .contact__mail:hover & {
             fill: var(--accent-color)
         }    
-    .connect__mail:focus & {
+    .contact__mail:focus & {
             fill: var(--accent-color)
         }
 }
 
-.connect__tel-icon {
+.contact__tel-icon {
     width: 10px;
     height: 16px;
     padding: 0;
@@ -103,10 +101,10 @@
     margin-right: 10px;
     fill: var(--primary-text-color);
     transition: color var(--transition-options);
-    .connect__tel:hover & {
+    .contact__tel:hover & {
             fill: var(--accent-color)
         }    
-    .connect__tel:focus & {
+    .contact__tel:focus & {
             fill: var(--accent-color)
         }
 }

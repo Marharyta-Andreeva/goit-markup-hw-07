@@ -33,7 +33,8 @@
 .modal__icon {
     fill: #000000;
     transition: fill var(--transition-options);
-    .modal__btn:hover & {
+    .modal__btn:hover &,
+    .modal__btn:focus & {
             fill: var(--accent-color);
         }
 }
@@ -48,7 +49,7 @@
     margin-bottom: 12px;
 }
 
-.form__title {
+.form__label {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
